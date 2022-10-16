@@ -34,6 +34,8 @@ let right = 0,
 	wrong = 0;
 const quesBox = document.getElementById('quesBox');
 const optionInput = document.querySelectorAll('.options');
+const themeSelector = document.querySelector('.theme_mode')
+
 	// console.log(optionInput);
 const loadQuestion = () => {
 	if (index === total) {
@@ -95,5 +97,46 @@ const endQuiz = () => {
 	`
 }
 
+// on load 
+
+
+(function () {
+    localStorage.setItem('ispwainstalled',false)
+    const value = localStorage.getItem('theme')
+    if (value === 'Dark Mode') {
+        darkMode()
+    }
+    else if (value === 'Light Mode') {
+        return null
+    }
+    else {
+        localStorage.setItem('theme', 'Light Mode')
+    }
+})()
+
+
+// on load end 
+
+
+
+
+
+
+// dark mode start
+
+function darkMode() {
+    document.body.classList.toggle("dark");
+    document.querySelector('.right_btn')
+    document.querySelector('.left_btn')
+    document.querySelector('.container')
+
+    localStorage.setItem('theme', themeSelector.textContent)
+    const value = localStorage.getItem('theme')
+
+
+    value === 'Dark Mode' ? themeSelector.textContent = "Light Mode" : themeSelector.textContent = "Dark Mode"
+    document.querySelector(".form").classList.toggle("dark");
+}
+// dark mode end
 
 loadQuestion();
