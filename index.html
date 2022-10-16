@@ -13,7 +13,9 @@
   <body>
     <!-- Ahmed Raza -->
     <header>
-      <nav><h1 class="headline">Quiz app</h1>
+      <nav class="nav-bar"><h1 class="headline">Quiz app</h1>
+        <div id="dateDiv" class="dateDiv">
+        </div>
 
     </header>
 		<button class="theme_mode " onclick="darkMode()">Dark Mode</button>
@@ -38,11 +40,12 @@
           <input id="option4" class="options" type="radio" name="option" value="d">
           <label for="option4">d) option 4</label>
         </div>
-        <button type="reset" class="btn reset" >Reset</button>
+        <button type="reset" class="btn reset" onclick="resetData()">Reset</button>
         <button class="btn " onclick="submitQuiz()">Submit</button>
       </div>
   	</div>
     <!-- Ahmed Raza -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 	<script src="app.js"></script>
   </body>
 </html>
