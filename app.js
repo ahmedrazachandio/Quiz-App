@@ -26,6 +26,14 @@ const questions = [{
 	'correct' : 'c'
 },
 {
+'que' : "The third largest city of Pakistan is",
+'a' : "Karachi",
+'b' : 'Lahore',
+'c' : 'Faisalabad',
+'d' : 'Sukkur',
+'correct' : 'c'
+},
+{
 	'que' : "National code of Pakistan is ?",
 	'a' : "Pak",
 	'b' : 'PK',
@@ -161,6 +169,7 @@ const reset = ()=>{
 // Ahmed Raza
 
 const endQuiz = () => {
+	document.getElementById("box").innerHTML = `<h2>Result .</h2>`
 	document.getElementById("box").innerHTML = `
 	<h3>Thank you for playing the Quiz.</h3>
 	<h2>${right} / ${total} are correct</h2
