@@ -173,7 +173,7 @@ const endQuiz = () => {
 	<h2>Result .</h2>
 	<h3>Thank you for playing the Quiz.</h3>
 	<h2>${right} / ${total} are correct</h2>
-	<button type="reset" class="btn reset" onclick="resetData()">Try Again</button>
+	<button type="reset" class="btn submit" onclick="resetData()">Try Again</button>
 	`
 }
 
