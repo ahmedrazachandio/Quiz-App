@@ -169,8 +169,8 @@ const reset = ()=>{
 // Ahmed Raza
 
 const endQuiz = () => {
-	document.getElementById("box").innerHTML = `<h2>Result .</h2>`
 	document.getElementById("box").innerHTML = `
+	<h2>Result .</h2>
 	<h3>Thank you for playing the Quiz.</h3>
 	<h2>${right} / ${total} are correct</h2
 	`
