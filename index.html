@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <title>Ahmed Raza | Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+  </head>
+  <body>
+    <!-- Ahmed Raza -->
+    <header>
+      <nav><h1 class="headline">Quiz app</h1>
+
+    </header>
+		<button class="theme_mode " onclick="darkMode()">Dark Mode</button>
+
+
+  	<div class="main">
+  		<div id="box" class="form">
+        <h2 id="quesBox">1) This is the dummy question ?</h2>  
+        <div class="row">
+          <input id="option1" class="options" type="radio" name="option" value="a">
+          <label for="option1">a) option 1</label>
+        </div>
+        <div class="row">
+          <input id="option2" class="options" type="radio" name="option" value="b">
+          <label for="option2 ">b) option 2</label>
+        </div>
+        <div class="row">
+          <input id="option3" class="options" type="radio" name="option" value="c">
+          <label for="option3">c) option 3</label>
+        </div>
+        <div class="row">
+          <input id="option4" class="options" type="radio" name="option" value="d">
+          <label for="option4">d) option 4</label>
+        </div>
+        <button type="reset" class="btn reset" >Reset</button>
+        <button class="btn " onclick="submitQuiz()">Submit</button>
+      </div>
+  	</div>
+    <!-- Ahmed Raza -->
+	<script src="app.js"></script>
+  </body>
+</html>
