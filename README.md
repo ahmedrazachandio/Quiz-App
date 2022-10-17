@@ -4,8 +4,6 @@ body{
     background-color : lightgray;
 }
 </style>
-
-
 <h1>Light Mode.</h1>
 <hr>
 <img src="images/light.png" width="80%">  
