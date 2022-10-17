@@ -1,9 +1,9 @@
 # Simple-Quiz-Aplication
-<style>   
+<!-- <style>   
 body{
     background-color : lightgray;
 }
-</style>
+</style> -->
 <h1>Light Mode.</h1>
 <hr>
 <img src="images/light.png" width="80%">  
